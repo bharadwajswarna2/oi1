@@ -90,7 +90,7 @@ window.addEventListener('DOMContentLoaded', function () {
           this.updateChatText(chatbox);
           textField.value = '';
       
-          fetch('https://3c54-54-147-217-91.ngrok.io:8000/chat_gpt_query', {
+          fetch('https://8a2a-54-147-217-91.ngrok.io:8000/chat_gpt_query', {
             method: 'POST',
             body: JSON.stringify({ message: text1 }),
             mode: 'cors',
@@ -145,7 +145,7 @@ window.addEventListener('DOMContentLoaded', function () {
             const intervalId = setInterval(() => {
             console.log('Interval running...',counter);
             //  clearInterval(intervalId);
-            fetch('https://3c54-54-147-217-91.ngrok.io:8000/initial_query', {
+            fetch('https://8a2a-54-147-217-91.ngrok.io:8000/initial_query', {
               method: 'POST',
               body: JSON.stringify({session_identifier : getCookie()}),
               mode: 'cors',
